@@ -1,0 +1,17 @@
+#include <main.h>
+#include <var.h>
+#include "lcd.c"
+void ngat_ngoai(void)
+{
+  
+}
+
+void main()
+{
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

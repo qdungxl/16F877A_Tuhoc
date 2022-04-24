@@ -1,0 +1,13 @@
+#include <main.h>
+#include <var.h>
+
+void main()
+{
+   int1 LedState = 1;
+   output_drive(LED);
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

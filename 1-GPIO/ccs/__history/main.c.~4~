@@ -1,0 +1,13 @@
+#include <main.h>
+#include <var.h>
+#define PIN_D0 LED
+void main()
+{
+   int1 LedState = 1;
+   output_drive(LED);
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

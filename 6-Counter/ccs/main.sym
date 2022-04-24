@@ -1,0 +1,106 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 @sprintf_string
+022-035 main.str
+036     main.Value
+037-038 LCD_Puts.s
+037     @PRINTF_U_646.P1
+037     LCD_Gotoxy.x
+037     @PSTRINGCN7_646.P1
+037     main.@SCRATCH1
+037     @PSTRINGC7_646.@SCRATCH1
+038     @PRINTF_U_646.P1
+038     LCD_Gotoxy.y
+038     @PSTRINGC7_646.@SCRATCH2
+038     @PSTRINGCN7_646.@SCRATCH1
+039     @DIV88.P1
+039     LCD_Gotoxy.address
+039     LCD_Puts.@SCRATCH1
+039     @PSTRINGC7_646.@SCRATCH3
+039     @PSTRINGCN7_646.@SCRATCH2
+03A     @DIV88.P1
+03A     LCD_PutChar.Data
+03A     @delay_ms1.P1
+03A     @PSTRINGC7_646.@SCRATCH4
+03A     @PSTRINGCN7_646.@SCRATCH3
+03B     LCD_SendCommand.command
+03B     @SPRINTF.P1
+03B     @PSTRINGCN7_646.@SCRATCH4
+03B     @DIV88.@SCRATCH1
+03C     LCD_SendCommand.@SCRATCH1
+03D     LCD_Send4Bit.Data
+03E     LCD_Send4Bit.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const644.call
+00000C  @const649.call
+000013  LCD_Send4Bit
+00003A  @delay_ms1
+00004F  LCD_Enable
+00005C  LCD_SendCommand
+000069  LCD_Init
+00009A  @SPRINTF
+0000A7  @PSTRINGC7_646
+0000FF  LCD_Puts
+000114  LCD_PutChar
+00011E  timer0_config
+000128  LCD_Gotoxy
+00013E  @PSTRINGCN7_646
+000197  @DIV88
+0001AC  @PRINTF_U_646
+0001E3  @cinit1
+0001E3  main
+0001EF  @cinit2
+
+Project Directory:
+    D:\STUDY\PIC\6-Counter\ccs\
+
+Project Files:
+    main.c                                                  [23-Apr-22 22:11  CRC=48B009C4]
+    main.h                                                  [23-Apr-22 21:56  CRC=629CB5CB]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [12-Nov-13 14:35  CRC=81334808]
+    var.h                                                   [21-Apr-22 17:43  CRC=00000000]
+    lcd.c                                                   [21-Apr-22 17:43  CRC=A5072549]
+    timer.c                                                 [21-Apr-22 17:43  CRC=D1020244]
+
+Source signature=738B3168
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Case Sensitive: Yes
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

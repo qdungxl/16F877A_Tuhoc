@@ -1,0 +1,50 @@
+ÀÄmain
+   ÀÄmain  0/71  Ram=22
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄLCD_Init  0/49  Ram=0
+      ³  ÃÄLCD_Send4Bit  0/39  Ram=2
+      ³  ÃÄ@delay_ms1  0/21  Ram=1
+      ³  ÃÄLCD_Send4Bit  0/39  Ram=2
+      ³  ÃÄLCD_Enable  0/13  Ram=0
+      ³  ÃÄ@delay_ms1  0/21  Ram=1
+      ³  ÃÄLCD_Enable  0/13  Ram=0
+      ³  ÃÄLCD_Enable  0/13  Ram=0
+      ³  ÃÄLCD_Send4Bit  0/39  Ram=2
+      ³  ÃÄLCD_Enable  0/13  Ram=0
+      ³  ÃÄLCD_SendCommand  0/13  Ram=2
+      ³  ³  ÃÄLCD_Send4Bit  0/39  Ram=2
+      ³  ³  ÃÄLCD_Enable  0/13  Ram=0
+      ³  ³  ÃÄLCD_Send4Bit  0/39  Ram=2
+      ³  ³  ÀÄLCD_Enable  0/13  Ram=0
+      ³  ÃÄLCD_SendCommand  0/13  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_SendCommand  0/13  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄLCD_SendCommand  0/13  Ram=2
+      ³     ÀÄ*
+      ÃÄ@PSTRINGC7_646  0/88  Ram=4
+      ³  ÃÄ@SPRINTF  0/13  Ram=1
+      ³  ÀÄ@SPRINTF  0/13  Ram=1
+      ÃÄLCD_Puts  0/31  Ram=3
+      ³  ÀÄLCD_PutChar  (Inline)  Ram=1
+      ³     ÀÄLCD_SendCommand  0/13  Ram=2
+      ³        ÀÄ*
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÃÄtimer0_config  0/10  Ram=0
+      ÃÄ@delay_ms1  0/21  Ram=1
+      ÃÄLCD_Gotoxy  0/22  Ram=3
+      ³  ÃÄ@delay_ms1  0/21  Ram=1
+      ³  ÃÄLCD_SendCommand  0/13  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/21  Ram=1
+      ÃÄ@PSTRINGCN7_646  0/89  Ram=5
+      ³  ÃÄ@SPRINTF  0/13  Ram=1
+      ³  ÀÄ@SPRINTF  0/13  Ram=1
+      ÃÄ@PRINTF_U_646  0/55  Ram=2
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄ@SPRINTF  0/13  Ram=1
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÃÄ@SPRINTF  0/13  Ram=1
+      ³  ÀÄ@SPRINTF  0/13  Ram=1
+      ÀÄLCD_Puts  0/31  Ram=3
+         ÀÄ*

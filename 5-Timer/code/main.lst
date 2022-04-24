@@ -1,0 +1,1171 @@
+CCS PCM C Compiler, Version 4.114, 93460303               05-Oct-12 22:21
+
+               Filename: D:\Company\Project\Dien Dan\PIC\Bai 10. Timer Counter\code\main.lst
+
+               ROM used: 825 words (10%)
+                         Largest free fragment is 2048
+               RAM used: 38 (10%) at main() level
+                         45 (12%) worst case
+               Stack:    4 worst case (3 in main + 1 for interrupts)
+
+*
+0000:  MOVLW  02
+0001:  MOVWF  0A
+0002:  GOTO   2DF
+0003:  NOP
+0004:  MOVWF  7F
+0005:  SWAPF  03,W
+0006:  CLRF   03
+0007:  MOVWF  21
+0008:  MOVF   0A,W
+0009:  MOVWF  20
+000A:  CLRF   0A
+000B:  MOVF   04,W
+000C:  MOVWF  22
+000D:  MOVF   77,W
+000E:  MOVWF  23
+000F:  MOVF   78,W
+0010:  MOVWF  24
+0011:  MOVF   79,W
+0012:  MOVWF  25
+0013:  MOVF   7A,W
+0014:  MOVWF  26
+0015:  BCF    03.7
+0016:  BCF    03.5
+0017:  BTFSS  0B.5
+0018:  GOTO   01B
+0019:  BTFSC  0B.2
+001A:  GOTO   07C
+001B:  BTFSS  0B.3
+001C:  GOTO   01F
+001D:  BTFSC  0B.0
+001E:  GOTO   07F
+001F:  BTFSS  0B.4
+0020:  GOTO   023
+0021:  BTFSC  0B.1
+0022:  GOTO   082
+0023:  MOVLW  8C
+0024:  MOVWF  04
+0025:  BTFSS  00.6
+0026:  GOTO   029
+0027:  BTFSC  0C.6
+0028:  GOTO   085
+0029:  MOVLW  8C
+002A:  MOVWF  04
+002B:  BTFSS  00.4
+002C:  GOTO   02F
+002D:  BTFSC  0C.4
+002E:  GOTO   088
+002F:  MOVLW  8C
+0030:  MOVWF  04
+0031:  BTFSS  00.5
+0032:  GOTO   035
+0033:  BTFSC  0C.5
+0034:  GOTO   08B
+0035:  MOVLW  8C
+0036:  MOVWF  04
+0037:  BTFSS  00.0
+0038:  GOTO   03B
+0039:  BTFSC  0C.0
+003A:  GOTO   08E
+003B:  MOVLW  8C
+003C:  MOVWF  04
+003D:  BTFSS  00.1
+003E:  GOTO   041
+003F:  BTFSC  0C.1
+0040:  GOTO   091
+0041:  MOVLW  8C
+0042:  MOVWF  04
+0043:  BTFSS  00.2
+0044:  GOTO   047
+0045:  BTFSC  0C.2
+0046:  GOTO   094
+0047:  MOVLW  8D
+0048:  MOVWF  04
+0049:  BTFSS  00.0
+004A:  GOTO   04D
+004B:  BTFSC  0D.0
+004C:  GOTO   097
+004D:  MOVLW  8C
+004E:  MOVWF  04
+004F:  BTFSS  00.3
+0050:  GOTO   053
+0051:  BTFSC  0C.3
+0052:  GOTO   09A
+0053:  MOVLW  8C
+0054:  MOVWF  04
+0055:  BTFSS  00.7
+0056:  GOTO   059
+0057:  BTFSC  0C.7
+0058:  GOTO   09D
+0059:  MOVLW  8D
+005A:  MOVWF  04
+005B:  BTFSS  00.3
+005C:  GOTO   05F
+005D:  BTFSC  0D.3
+005E:  GOTO   0A0
+005F:  MOVLW  8D
+0060:  MOVWF  04
+0061:  BTFSS  00.4
+0062:  GOTO   065
+0063:  BTFSC  0D.4
+0064:  GOTO   0A3
+0065:  MOVLW  8D
+0066:  MOVWF  04
+0067:  BTFSS  00.6
+0068:  GOTO   06B
+0069:  BTFSC  0D.6
+006A:  GOTO   0A6
+006B:  MOVF   22,W
+006C:  MOVWF  04
+006D:  MOVF   23,W
+006E:  MOVWF  77
+006F:  MOVF   24,W
+0070:  MOVWF  78
+0071:  MOVF   25,W
+0072:  MOVWF  79
+0073:  MOVF   26,W
+0074:  MOVWF  7A
+0075:  MOVF   20,W
+0076:  MOVWF  0A
+0077:  SWAPF  21,W
+0078:  MOVWF  03
+0079:  SWAPF  7F,F
+007A:  SWAPF  7F,W
+007B:  RETFIE
+007C:  BCF    0A.3
+007D:  BCF    0A.4
+007E:  GOTO   0B1
+007F:  BCF    0A.3
+0080:  BCF    0A.4
+0081:  GOTO   0AD
+0082:  BCF    0A.3
+0083:  BCF    0A.4
+0084:  GOTO   0A9
+0085:  BCF    0A.3
+0086:  BCF    0A.4
+0087:  GOTO   0D3
+0088:  BCF    0A.3
+0089:  BCF    0A.4
+008A:  GOTO   0DF
+008B:  BCF    0A.3
+008C:  BCF    0A.4
+008D:  GOTO   0E3
+008E:  BCF    0A.3
+008F:  BCF    0A.4
+0090:  GOTO   0CB
+0091:  BCF    0A.3
+0092:  BCF    0A.4
+0093:  GOTO   0CF
+0094:  BCF    0A.3
+0095:  BCF    0A.4
+0096:  GOTO   0D7
+0097:  BCF    0A.3
+0098:  BCF    0A.4
+0099:  GOTO   0DB
+009A:  BCF    0A.3
+009B:  BCF    0A.4
+009C:  GOTO   0E7
+009D:  BCF    0A.3
+009E:  BCF    0A.4
+009F:  GOTO   0EB
+00A0:  BCF    0A.3
+00A1:  BCF    0A.4
+00A2:  GOTO   0EF
+00A3:  BCF    0A.3
+00A4:  BCF    0A.4
+00A5:  GOTO   0F3
+00A6:  BCF    0A.3
+00A7:  BCF    0A.4
+00A8:  GOTO   0F7
+.................... #include <main.h> 
+.................... /** 
+....................   ****************************************************************************** 
+....................   * Ten Tep      :        main.h 
+....................   * Tac Gia      :        Nguyen Quy Nhat 
+....................   * Cong Ty      :        MinhHaGroup 
+....................   * Website      :        BanLinhKien.Vn 
+....................   * Phien Ban    :        V1.0.0 
+....................   * Ngay         :        31-08-2012 
+....................   * Tom Tat      :        Khai bao cac thu vien. 
+....................   *                       Cau hinh mot so chuc nang cho trinh bien dich. 
+....................   *                       Cau hinh mot so chuc nang cho CHIP. 
+....................   *                       Dinh nghia I/O. 
+....................   *            
+....................   * 
+....................   ****************************************************************************** 
+....................   * Chu Y      :           
+....................   *                           
+....................   *                       
+....................   ****************************************************************************** 
+....................   */ 
+.................... #ifndef _MAIN_ 
+.................... #define _MAIN_ 
+.................... /***************KHAI BAO CAC THU VIEN*****************/    
+.................... #include <16F877A.h> 
+.................... //////// Standard Header file for the PIC16F877A device //////////////// 
+.................... #device PIC16F877A 
+.................... #list 
+....................  
+.................... /**************KHAI BAO CAU HINH FUSE BIT************/ 
+.................... /////////////////////////////////////////////////////// 
+.................... //                                                   // 
+.................... // Voi moi muc phai chon mot trong danh sach dua ra  // 
+.................... //                                                   // 
+.................... /////////////////////////////////////////////////////// 
+....................  
+.................... //_________________POINTER AND ADC____________________ 
+....................  
+.................... #device *=16 adc=10          //   su dung con tro 16 bit, bo chuyen doi ADC 10 bit 
+.................... //#device *=16 adc=8          //  su dung con tro 16 bit, bo chuyen doi ADC 8 bit 
+....................  
+.................... //__________________WATCH DOG TIMER___________________ 
+....................  
+.................... #FUSES NOWDT                   //   khong su dung bo Watch Dog Timer 
+....................  
+.................... //__________________HIGH SPEED OSC____________________ 
+....................  
+.................... //#FUSES LP                        // Su dung nguon dao dong tan so thap < 200 khz 
+.................... //#FUSES XT                        // Dao dong thach anh <= 4mhz voi PCM/PCH , 3mhz to 10 mhz voi PCD 
+.................... //#FUSES RC                        // Dao dong RC voi CLKOUT 
+.................... #FUSES HS                      //Dao dong tan so cao (> 4mhz voi PCM/PCH) (>10mhz voi PCD) 
+....................  
+.................... //__________________POWER UP TIMER____________________ 
+....................  
+.................... #FUSES NOPUT                    //Khong su dung Power Up Timer 
+.................... //#FUSES PUT                        //Su dung Power Up Timer 
+.................... //__________________BROWN OUT_________________________ 
+....................  
+.................... #FUSES NOBROWNOUT               //Khong reset chip khi BrownOut 
+.................... //#FUSES BROWNOUT                   //Reset chi khi co BrownOut 
+.................... //______________LOW VOLTAGE PROGRAM___________________ 
+....................  
+.................... #FUSES NOLVP                    //No low voltage programing, B3(PIC16) or B5(PIC18) used for I/O 
+.................... //#FUSES LVP                        //Low Voltage Programming on B3(PIC16) or B5(PIC18) 
+.................... //______________CODE PROTECED EEPROM__________________ 
+....................  
+.................... #FUSES NOCPD                    //Khong bao ve du lieu EEPROM 
+.................... //#FUSES CPD                        //Dung che do bao ve du lieu EEPROM 
+....................  
+.................... //_____________PROGRAM WRITE PROTECED_________________ 
+....................  
+.................... //#FUSES WRT                      //Program Memory Write Protected 
+.................... //#FUSES WRT_50%                  //Lower half of Program Memory is Write Protected 
+.................... //#FUSES WRT_5%                   //Lower 255 bytes of Program Memory is Write Protected 
+.................... #FUSES NOWRT                    //Program memory not write protected 
+....................  
+.................... //_____________ENABLE DEBUG MODE FOR ICD______________ 
+....................  
+.................... //#device ICD=TRUE            // Kich hoat chuc nang DEBUG ICD Integrated Chip Debugging 
+.................... //________________DEBUG FOR ICD_______________________ 
+....................  
+.................... #FUSES NODEBUG                  //Khong su dung che do Debug voi ICD 
+.................... //#FUSES DEBUG                      // Su dung che do Debug voi ICD 
+....................  
+.................... //___________CODE PROTECED FROM READING_______________ 
+.................... #FUSES NOPROTECT                // Cho phep doc lai Code 
+.................... //#FUSES PROTECT                    // Khong cho phep doc lai code  
+....................  
+.................... //___________________CLOCK____________________________ 
+....................  
+.................... #use delay(clock=24000000)            // Su dung tan so 24Mhz, khong reset watch dog khi goi den ham delay. 
+*
+0137:  MOVLW  43
+0138:  MOVWF  04
+0139:  BCF    03.7
+013A:  MOVF   00,W
+013B:  BTFSC  03.2
+013C:  GOTO   14B
+013D:  MOVLW  07
+013E:  MOVWF  78
+013F:  CLRF   77
+0140:  DECFSZ 77,F
+0141:  GOTO   140
+0142:  DECFSZ 78,F
+0143:  GOTO   13F
+0144:  MOVLW  C7
+0145:  MOVWF  77
+0146:  DECFSZ 77,F
+0147:  GOTO   146
+0148:  NOP
+0149:  DECFSZ 00,F
+014A:  GOTO   13D
+014B:  RETURN
+.................... //#use delay(clock=20000000,RESTART_WDT)   // Su dung tan so 20Mhz, reset watch dog khi goi den ham delay. 
+....................  
+.................... //________________FAST_STANDAR I/O PORTA___________________ 
+....................  
+.................... //#use FAST_IO(A)          // Thiet lap che do fast I/O cho PORTA, yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se chi su dung 1 chu ky lenh 
+.................... #use STANDARD_IO(A)     // Thiet lap che do chuan I/O cho PORTA, khong yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se su dung 3-4 chu ky lenh 
+.................... //#use FIXED_IO(A)       // 
+....................  
+.................... //________________FAST_STANDAR I/O PORTB___________________ 
+....................  
+.................... //#use FAST_IO(B)          // Thiet lap che do fast I/O cho PORTB, yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se chi su dung 1 chu ky lenh 
+.................... #use STANDARD_IO(B)     // Thiet lap che do chuan I/O cho PORTB, khong yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se su dung 3-4 chu ky lenh 
+.................... //#use FIXED_IO(B)       // 
+....................  
+.................... //________________FAST_STANDAR I/O PORTC____________________ 
+....................  
+.................... #use FAST_IO(C)          // Thiet lap che do fast I/O cho PORTC, yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se chi su dung 1 chu ky lenh 
+.................... //#use STANDARD_IO(C)     // Thiet lap che do chuan I/O cho PORTC, khong yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se su dung 3-4 chu ky lenh 
+.................... //#use FIXED_IO(C)       // 
+....................  
+.................... //________________FAST_STANDAR I/O PORTD_____________________ 
+....................  
+.................... #use FAST_IO(D)          // Thiet lap che do fast I/O cho PORTD, yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se chi su dung 1 chu ky lenh 
+.................... //#use STANDARD_IO(D)     // Thiet lap che do chuan I/O cho PORTD, khong yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se su dung 3-4 chu ky lenh 
+.................... //#use FIXED_IO(D)       // 
+....................  
+.................... //_______________FAST_STANDAR I/O PORTE___________________ 
+....................  
+.................... #use FAST_IO(E)        // Thiet lap che do fast I/O cho PORTE, yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se chi su dung 1 chu ky lenh 
+.................... //#use STANDARD_IO(E)     // Thiet lap che do chuan I/O cho PORTE, khong yeu cau phai chi ro huong Vao/Ra  
+....................                          // cho cac chan I/O. cac ham Input,Output se su dung 3-4 chu ky lenh 
+.................... //#use FIXED_IO(E)       // 
+....................  
+....................  
+.................... //________________________CASE_____________________________ 
+.................... //#CASE               // Phan biet chu hoa va chu thuong trong khi lap trinh code 
+.................... /************** DINH NGHIA CAC CHAN I/O ************/ 
+....................  
+....................  
+.................... //______________________I/O LCD____________________________ 
+.................... #define LCD_RS PIN_E0                         
+.................... #define LCD_RW PIN_E1 
+.................... #define LCD_EN PIN_E2 
+.................... #define LCD_D4 PIN_D4                  
+.................... #define LCD_D5 PIN_D5 
+.................... #define LCD_D6 PIN_D6 
+.................... #define LCD_D7 PIN_D7  
+.................... #endif 
+....................  
+.................... #include <var.h> 
+.................... #ifndef _VAR_ 
+.................... #define _VAR_ 
+.................... unsigned int1 enable_display=0; 
+.................... unsigned int8 Count; 
+.................... unsigned int8 Value; 
+.................... #endif                                           
+....................  
+.................... #include "lcd.c" 
+.................... /** 
+....................   ****************************************************************************** 
+....................   * Ten Tep      :        lcd_16x2.c 
+....................   * Tac Gia      :        Nguyen Quy Nhat 
+....................   * Cong Ty      :         MinhHaGroup 
+....................   * Website      :         BanLinhKien.Vn 
+....................   * Phien Ban   :         V1.0.0 
+....................   * Ngay         :       31-07-2012 
+....................   * Tom Tat   :     Dinh nghia cac ham dieu khien LCD 16x2. 
+....................   *            
+....................   * 
+....................   ****************************************************************************** 
+....................   * Chu Y      : 
+....................   *                       
+....................   ****************************************************************************** 
+....................   */ 
+.................... //Tao Xung 
+....................  void LCD_Enable(void) 
+.................... { 
+....................  output_high(LCD_EN); 
+014C:  BSF    09.2
+....................  delay_us(3); 
+014D:  MOVLW  05
+014E:  MOVWF  77
+014F:  DECFSZ 77,F
+0150:  GOTO   14F
+0151:  GOTO   152
+....................  output_low(LCD_EN); 
+0152:  BCF    09.2
+....................  delay_us(50);  
+0153:  MOVLW  63
+0154:  MOVWF  77
+0155:  DECFSZ 77,F
+0156:  GOTO   155
+0157:  GOTO   158
+.................... } 
+0158:  RETURN
+.................... //Ham Gui 4 Bit Du Lieu Ra LCD 
+....................  void LCD_Send4Bit( unsigned char Data ) 
+.................... { 
+....................  output_bit(LCD_D4,Data&0x01); 
+*
+0110:  BTFSC  46.0
+0111:  GOTO   114
+0112:  BCF    08.4
+0113:  GOTO   115
+0114:  BSF    08.4
+....................  output_bit(LCD_D5,(Data>>1)&1); 
+0115:  BCF    03.0
+0116:  RRF    46,W
+0117:  ANDLW  01
+0118:  BTFSS  03.2
+0119:  GOTO   11C
+011A:  BCF    08.5
+011B:  GOTO   11D
+011C:  BSF    08.5
+....................  output_bit(LCD_D6,(Data>>2)&1); 
+011D:  RRF    46,W
+011E:  MOVWF  77
+011F:  RRF    77,F
+0120:  MOVLW  3F
+0121:  ANDWF  77,F
+0122:  MOVF   77,W
+0123:  ANDLW  01
+0124:  BTFSS  03.2
+0125:  GOTO   128
+0126:  BCF    08.6
+0127:  GOTO   129
+0128:  BSF    08.6
+....................  output_bit(LCD_D7,(Data>>3)&1); 
+0129:  RRF    46,W
+012A:  MOVWF  77
+012B:  RRF    77,F
+012C:  RRF    77,F
+012D:  MOVLW  1F
+012E:  ANDWF  77,F
+012F:  MOVF   77,W
+0130:  ANDLW  01
+0131:  BTFSS  03.2
+0132:  GOTO   135
+0133:  BCF    08.7
+0134:  GOTO   136
+0135:  BSF    08.7
+.................... } 
+0136:  RETURN
+.................... // Ham Gui 1 Lenh Cho LCD 
+....................  void LCD_SendCommand (unsigned char command ) 
+.................... { 
+.................... LCD_Send4Bit  ( command >>4 );/* Gui 4 bit cao */ 
+*
+0159:  SWAPF  44,W
+015A:  MOVWF  45
+015B:  MOVLW  0F
+015C:  ANDWF  45,F
+015D:  MOVF   45,W
+015E:  MOVWF  46
+015F:  CALL   110
+.................... LCD_Enable () ; 
+0160:  CALL   14C
+.................... LCD_Send4Bit  ( command  );      /* Gui 4 bit thap*/ 
+0161:  MOVF   44,W
+0162:  MOVWF  46
+0163:  CALL   110
+.................... LCD_Enable () ; 
+0164:  CALL   14C
+.................... } 
+0165:  RETURN
+.................... // Ham Khoi Tao LCD 
+....................  void LCD_Init ( void ) 
+.................... { 
+.................... output_drive(LCD_D4); 
+0166:  BSF    03.5
+0167:  BCF    08.4
+.................... output_drive(LCD_D5); 
+0168:  BCF    08.5
+.................... output_drive(LCD_D6); 
+0169:  BCF    08.6
+.................... output_drive(LCD_D7); 
+016A:  BCF    08.7
+.................... output_drive(LCD_EN); 
+016B:  BCF    09.2
+.................... output_drive(LCD_RS); 
+016C:  BCF    09.0
+.................... output_drive(LCD_RW); 
+016D:  BCF    09.1
+.................... LCD_Send4Bit(0x00); 
+016E:  BCF    03.5
+016F:  CLRF   46
+0170:  CALL   110
+.................... delay_ms(20); 
+0171:  MOVLW  14
+0172:  MOVWF  43
+0173:  CALL   137
+.................... output_low(LCD_RS); 
+0174:  BCF    09.0
+.................... output_low(LCD_RW); 
+0175:  BCF    09.1
+.................... LCD_Send4Bit(0x03); 
+0176:  MOVLW  03
+0177:  MOVWF  46
+0178:  CALL   110
+.................... LCD_Enable(); 
+0179:  CALL   14C
+.................... delay_ms(5); 
+017A:  MOVLW  05
+017B:  MOVWF  43
+017C:  CALL   137
+.................... LCD_Enable(); 
+017D:  CALL   14C
+.................... delay_us(100); 
+017E:  MOVLW  C7
+017F:  MOVWF  77
+0180:  DECFSZ 77,F
+0181:  GOTO   180
+0182:  GOTO   183
+.................... LCD_Enable(); 
+0183:  CALL   14C
+.................... LCD_Send4Bit(0x02); 
+0184:  MOVLW  02
+0185:  MOVWF  46
+0186:  CALL   110
+.................... LCD_Enable(); 
+0187:  CALL   14C
+.................... LCD_SendCommand( 0x28 );      // giao thuc 4 bit, hien thi 2 hang, ki tu 5x8 
+0188:  MOVLW  28
+0189:  MOVWF  44
+018A:  CALL   159
+.................... LCD_SendCommand( 0x0c);    // cho phep hien thi man hinh 
+018B:  MOVLW  0C
+018C:  MOVWF  44
+018D:  CALL   159
+.................... LCD_SendCommand( 0x06 );      // tang ID, khong dich khung hinh 
+018E:  MOVLW  06
+018F:  MOVWF  44
+0190:  CALL   159
+.................... LCD_SendCommand( 0x01 ); // xoa toan bo khung hinh 
+0191:  MOVLW  01
+0192:  MOVWF  44
+0193:  CALL   159
+.................... } 
+0194:  BCF    0A.3
+0195:  BCF    0A.4
+0196:  GOTO   2EF (RETURN)
+.................... void LCD_Gotoxy(unsigned char x, unsigned char y) 
+.................... { 
+....................   unsigned char address; 
+....................   if(!y) 
+*
+0212:  MOVF   41,F
+0213:  BTFSS  03.2
+0214:  GOTO   219
+....................   address = (0x80+x); 
+0215:  MOVLW  80
+0216:  ADDWF  40,W
+0217:  MOVWF  42
+....................   else 
+0218:  GOTO   21C
+....................   address = (0xC0+x); 
+0219:  MOVLW  C0
+021A:  ADDWF  40,W
+021B:  MOVWF  42
+....................   delay_us(1000); 
+021C:  MOVLW  01
+021D:  MOVWF  43
+021E:  CALL   137
+....................   LCD_SendCommand(address); 
+021F:  MOVF   42,W
+0220:  MOVWF  44
+0221:  CALL   159
+....................   delay_ms(10); 
+0222:  MOVLW  0A
+0223:  MOVWF  43
+0224:  CALL   137
+.................... } 
+0225:  RETURN
+.................... // Ham Xoa Man Hinh LCD 
+.................... void LCD_Clear() 
+.................... { 
+....................   LCD_SendCommand(0x01);   
+*
+0209:  MOVLW  01
+020A:  MOVWF  44
+020B:  CALL   159
+....................   delay_ms(10); 
+020C:  MOVLW  0A
+020D:  MOVWF  43
+020E:  CALL   137
+.................... } 
+020F:  BCF    0A.3
+0210:  BCF    0A.4
+0211:  GOTO   308 (RETURN)
+.................... // Ham Gui 1 Ki Tu Len LCD 
+....................  void LCD_PutChar ( unsigned char Data ) 
+.................... { 
+....................  output_high(LCD_RS); 
+*
+01FF:  BSF    09.0
+....................  LCD_SendCommand( Data ); 
+0200:  MOVF   43,W
+0201:  MOVWF  44
+0202:  CALL   159
+....................  output_low(LCD_RS); 
+0203:  BCF    09.0
+.................... } 
+.................... void LCD_Puts (char *s) 
+.................... { 
+....................    while (*s) 
+....................    { 
+*
+01EA:  MOVF   41,W
+01EB:  MOVWF  7A
+01EC:  MOVF   40,W
+01ED:  MOVWF  04
+01EE:  BCF    03.7
+01EF:  BTFSC  7A.0
+01F0:  BSF    03.7
+01F1:  MOVF   00,F
+01F2:  BTFSC  03.2
+01F3:  GOTO   208
+....................       LCD_PutChar(*s); 
+01F4:  MOVF   41,W
+01F5:  MOVWF  7A
+01F6:  MOVF   40,W
+01F7:  MOVWF  04
+01F8:  BCF    03.7
+01F9:  BTFSC  7A.0
+01FA:  BSF    03.7
+01FB:  MOVF   00,W
+01FC:  MOVWF  42
+01FD:  MOVF   42,W
+01FE:  MOVWF  43
+....................       s++; 
+*
+0204:  INCF   40,F
+0205:  BTFSC  03.2
+0206:  INCF   41,F
+....................    } 
+0207:  GOTO   1EA
+.................... } 
+0208:  RETURN
+....................  
+....................  
+....................  
+....................  
+....................  
+....................  
+....................  
+....................  
+....................  
+.................... #include "interrupt.c" 
+.................... #ifndef __INTERRUPT_ 
+.................... #define __INTERRUPT_ 
+.................... void interrupt_config() 
+.................... { 
+.................... /***************ENABLE-DISABLE NGAT******************/ 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //                     NGAT NGOAI               // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_EXT);      //Cho phep ngat ngoai hoat dong 
+.................... disable_interrupts(INT_EXT);      //Khong cho phep ngat ngoai hoat dong (mac dinh) 
+*
+0226:  BCF    0B.4
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... // NGAT KHI CO THAY DOI TRANG THAI CHAN RB4->RB7   // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_RB);      //Cho phep ngat RB hoat dong 
+.................... disable_interrupts(INT_RB);      //Khong cho phep ngat RB hoat dong (mac dinh) 
+0227:  BCF    0B.3
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //   NGAT KHI CO CAPTURE HOAC COMPARE O BO CCP1      // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_CCP1);   //Cho phep ngat CCP1 hoat dong 
+.................... disable_interrupts(INT_CCP1);   //Khong cho phep ngat CCP1 hoat dong (mac dinh) 
+0228:  BSF    03.5
+0229:  BCF    0C.2
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //   NGAT KHI CO CAPTURE HOAC COMPARE O BO CCP2      // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_CCP2);   //Cho phep ngat CCP2 hoat dong 
+.................... disable_interrupts(INT_CCP2);   //Khong cho phep ngat CCP2 hoat dong (mac dinh) 
+022A:  BCF    0D.0
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //      NGAT KHI TRUYEN XONG DU LIEU RS232         // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_TBE);   //Cho phep ngat TBE hoat dong 
+.................... disable_interrupts(INT_TBE);   //Khong cho phep ngat TBE hoat dong (mac dinh) 
+022B:  BCF    0C.4
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //      NGAT KHI NHAN 1 BYTE DU LIEU RS232         // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_RDA);   //Cho phep ngat RDA hoat dong 
+.................... disable_interrupts(INT_RDA);   //Khong cho phep ngat RDA hoat dong (mac dinh) 
+022C:  BCF    0C.5
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT SSP                  // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_SSP);   //Cho phep ngat SSP hoat dong 
+.................... disable_interrupts(INT_SSP);   //Khong cho phep ngat SSP hoat dong (mac dinh) 
+022D:  BCF    0C.3
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT PSP                  // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_PSP);   //Cho phep ngat PSP hoat dong 
+.................... disable_interrupts(INT_PSP);   //Khong cho phep ngat PSP hoat dong (mac dinh) 
+022E:  BCF    0C.7
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT BUSCOL                  // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_BUSCOL);   //Cho phep ngat BUSCOL hoat dong 
+.................... disable_interrupts(INT_BUSCOL);   //Khong cho phep ngat BUSCOL hoat dong (mac dinh) 
+022F:  BCF    0D.3
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //      NGAT HOAN THANH GHI DU LIEU VAO EEPROM      // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_EEPROM);   //Cho phep ngat EEPROM hoat dong 
+.................... disable_interrupts(INT_EEPROM);   //Khong cho phep ngat EEPROM hoat dong (mac dinh) 
+0230:  BCF    0D.4
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT COMPARATOR               // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_COMP);   //Cho phep ngat COMPARATOR hoat dong 
+.................... disable_interrupts(INT_COMP);   //Khong cho phep ngat COMPARATOR hoat dong (mac dinh) 
+0231:  BCF    0D.6
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //                NGAT TOAN CUC               // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... enable_interrupts(GLOBAL);   //Cho phep cac ngat co the hoat dong 
+0232:  MOVLW  C0
+0233:  BCF    03.5
+0234:  IORWF  0B,F
+.................... //disable_interrupts(GLOBAL);   //Khong cho phep cac ngat hoat dong (mac dinh) 
+.................... } 
+0235:  BCF    0A.3
+0236:  BCF    0A.4
+0237:  GOTO   31A (RETURN)
+.................... //____________________NGAT NGOAI___________________________ 
+.................... #INT_EXT 
+.................... void ngat_ngoai(void) 
+.................... {    
+....................    ; 
+.................... } 
+....................  
+.................... //____NGAT KHI CO THAY DOI TRANG THAI CHAN RB4->RB7________ 
+....................  
+*
+00A9:  BCF    0B.1
+00AA:  BCF    0A.3
+00AB:  BCF    0A.4
+00AC:  GOTO   06B
+.................... #INT_RB 
+.................... void ngat_RB(void) 
+.................... {    
+....................    ; 
+.................... } 
+.................... //_________________NGAT TRAN TIMER 0_______________________ 
+....................  
+00AD:  BCF    0B.0
+00AE:  BCF    0A.3
+00AF:  BCF    0A.4
+00B0:  GOTO   06B
+.................... #INT_RTCC             
+.................... void  ngat_timer0(void)  
+.................... { 
+....................  set_timer0(2);  
+00B1:  MOVLW  02
+00B2:  MOVWF  01
+....................    Count++; 
+00B3:  INCF   28,F
+....................    if(Count==46) 
+00B4:  MOVF   28,W
+00B5:  SUBLW  2E
+00B6:  BTFSS  03.2
+00B7:  GOTO   0C7
+....................    { 
+....................    // dinh thoi 0.5s 
+....................    disable_interrupts(GLOBAL);  
+00B8:  BCF    0B.6
+00B9:  BCF    0B.7
+00BA:  BTFSC  0B.7
+00BB:  GOTO   0B9
+....................    Count=0;                                  
+00BC:  CLRF   28
+....................    if(Value==99)Value=0;  
+00BD:  MOVF   29,W
+00BE:  SUBLW  63
+00BF:  BTFSS  03.2
+00C0:  GOTO   0C3
+00C1:  CLRF   29
+....................    else Value++; 
+00C2:  GOTO   0C4
+00C3:  INCF   29,F
+....................    enable_display=1; 
+00C4:  BSF    27.0
+....................    enable_interrupts(GLOBAL); 
+00C5:  MOVLW  C0
+00C6:  IORWF  0B,F
+....................    } 
+.................... } 
+.................... //_______________NGAT TRAN TIMER 1_________________________ 
+00C7:  BCF    0B.2
+00C8:  BCF    0A.3
+00C9:  BCF    0A.4
+00CA:  GOTO   06B
+.................... #INT_TIMER1            
+.................... void  ngat_timer1(void)  
+.................... { 
+....................     
+.................... } 
+.................... //______________NGAT TRAN TIMER 2__________________________ 
+00CB:  BCF    0C.0
+00CC:  BCF    0A.3
+00CD:  BCF    0A.4
+00CE:  GOTO   06B
+.................... #INT_TIMER2           
+.................... void  ngat_timer2(void)  
+.................... { 
+....................     
+.................... } 
+.................... //__________________NGAT HOAN THANH ADC____________________ 
+....................     
+00CF:  BCF    0C.1
+00D0:  BCF    0A.3
+00D1:  BCF    0A.4
+00D2:  GOTO   06B
+.................... #INT_AD           
+.................... void  ngat_ADC(void)  
+.................... { 
+....................     
+.................... } 
+.................... //______NGAT KHI CO CAPTURE HOAC COMPARE O BO CCP1_________ 
+00D3:  BCF    0C.6
+00D4:  BCF    0A.3
+00D5:  BCF    0A.4
+00D6:  GOTO   06B
+.................... #INT_CCP1           
+.................... void  ngat_ccp1(void)  
+.................... { 
+....................     
+.................... } 
+.................... //______NGAT KHI CO CAPTURE HOAC COMPARE O BO CCP2_________ 
+00D7:  BCF    0C.2
+00D8:  BCF    0A.3
+00D9:  BCF    0A.4
+00DA:  GOTO   06B
+.................... #INT_CCP2          
+.................... void  ngat_ccp2(void)  
+.................... { 
+....................     
+.................... } 
+.................... //_____________NGAT KHI TRUYEN XONG DU LIEU RS232__________ 
+00DB:  BCF    0D.0
+00DC:  BCF    0A.3
+00DD:  BCF    0A.4
+00DE:  GOTO   06B
+.................... #int_TBE 
+.................... void  TBE_isr(void)  
+.................... { 
+....................  
+.................... } 
+.................... //_____________NGAT KHI NHAN 1 BYTE DU LIEU RS232__________ 
+00DF:  BCF    0C.4
+00E0:  BCF    0A.3
+00E1:  BCF    0A.4
+00E2:  GOTO   06B
+.................... #int_RDA 
+.................... void  RDA_isr(void)  
+.................... { 
+....................  
+.................... } 
+.................... //______________NGAT KHI CO HOAT DONG SPI HOAC I2C__________ 
+00E3:  BCF    0C.5
+00E4:  BCF    0A.3
+00E5:  BCF    0A.4
+00E6:  GOTO   06B
+.................... #int_SSP 
+.................... void  SSP_isr(void)  
+.................... { 
+....................  
+.................... } 
+.................... //_____________NGAT KHI CO DU LIEU VAO CONG PSP______________ 
+00E7:  BCF    0C.3
+00E8:  BCF    0A.3
+00E9:  BCF    0A.4
+00EA:  GOTO   06B
+.................... #int_PSP 
+.................... void  PSP_isr(void)  
+.................... { 
+....................  
+.................... } 
+.................... //________________NGAT KHI CO XUNG DOT BUS________________ 
+....................  
+00EB:  BCF    0C.7
+00EC:  BCF    0A.3
+00ED:  BCF    0A.4
+00EE:  GOTO   06B
+.................... #int_BUSCOL 
+.................... void  BUSCOL_isr(void)  
+.................... { 
+....................  
+.................... } 
+....................  
+.................... //________NGAT HOAN THANH GHI DU LIEU VAO EEPROM____________ 
+....................  
+00EF:  BCF    0D.3
+00F0:  BCF    0A.3
+00F1:  BCF    0A.4
+00F2:  GOTO   06B
+.................... #int_EEPROM 
+.................... void  EEPROM_isr(void)  
+.................... { 
+....................  
+.................... } 
+....................  
+.................... //_________NGAT KHI CO BANG NHAU TREN BO COMPARATOR___________ 
+....................  
+00F3:  BCF    0D.4
+00F4:  BCF    0A.3
+00F5:  BCF    0A.4
+00F6:  GOTO   06B
+.................... #int_COMP 
+.................... void  COMP_isr(void)  
+.................... { 
+....................  
+.................... } 
+....................  
+.................... #endif 
+....................  
+.................... #include "timer.c" 
+.................... #ifndef __TIMER_ 
+.................... #define __TIMER_ 
+00F7:  BCF    0D.6
+00F8:  BCF    0A.3
+00F9:  BCF    0A.4
+00FA:  GOTO   06B
+.................... void timer0_config() 
+.................... { 
+.................... ////////////////////////////////////////////////////////////// 
+.................... //              Cau Hinh Timer 0                     // 
+.................... //         T_tm0: Chu ky xung dem cua timer 0            // 
+.................... //         T_osc: Chu ky dao dong su dung cho chip         // 
+.................... ////////////////////////////////////////////////////////////// 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_1|RTCC_8_bit);      //   T_tm0=T_osc*4*1 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_2|RTCC_8_bit);      //   T_tm0=T_osc*4*2 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_4|RTCC_8_bit);      //   T_tm0=T_osc*4*4 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_8|RTCC_8_bit);      //   T_tm0=T_osc*4*8 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_16|RTCC_8_bit);      //   T_tm0=T_osc*4*16 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_32|RTCC_8_bit);      //   T_tm0=T_osc*4*32 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_64|RTCC_8_bit);      //   T_tm0=T_osc*4*64 
+.................... //setup_timer_0(RTCC_INTERNAL|RTCC_DIV_128|RTCC_8_bit);      //   T_tm0=T_osc*4*128 
+.................... setup_timer_0(RTCC_INTERNAL|RTCC_DIV_256|RTCC_8_bit);      //   T_tm0=T_osc*4*256 
+*
+0238:  BSF    03.5
+0239:  MOVF   01,W
+023A:  ANDLW  C0
+023B:  IORLW  07
+023C:  MOVWF  01
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_1|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 1 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_2|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 2 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_4|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 4 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_8|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 8 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_16|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 16 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_32|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 32 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_64|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 64 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_128|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 128 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_L_TO_H|RTCC_DIV_256|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 256 xung len tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_1|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 1 suon xuong tai chan PIN_A4 (T0CKI)    
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_2|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 2 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_4|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 4 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_8|RTCC_8_bit);      //   Tang gia tri timer0 len 1 khi co 8 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_16|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 16 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_32|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 32 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_64|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 64 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_128|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 128 suon xuong tai chan PIN_A4 (T0CKI) 
+.................... //setup_timer_0(RTCC_EXT_H_TO_L|RTCC_DIV_256|RTCC_8_bit);   //   Tang gia tri timer0 len 1 khi co 256 suon xuong tai chan PIN_A4 (T0CKI) 
+....................  
+.................... /******************Thiet lap ngat timer*********************/ 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //                   NGAT TRAN TIMER 0            // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... enable_interrupts(INT_TIMER0);   //Cho phep ngat tran timer0 hoat dong 
+023D:  BCF    03.5
+023E:  BSF    0B.5
+.................... //disable_interrupts(INT_TIMER0);   //Khong cho phep ngat tran timer0 hoat dong (mac dinh) 
+....................  
+.................... } 
+023F:  BCF    0A.3
+0240:  BCF    0A.4
+0241:  GOTO   31B (RETURN)
+.................... void timer1_config() 
+.................... { 
+.................... //setup_timer_1(T1_INTERNAL|T1_DIV_BY_1);               // 
+.................... //setup_timer_1(T1_INTERNAL|T1_DIV_BY_2);               // 
+.................... //setup_timer_1(T1_INTERNAL|T1_DIV_BY_4);               // 
+.................... //setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);               // 
+.................... //setup_timer_1(T1_EXTERNAL|T1_DIV_BY_1);               // 
+.................... //setup_timer_1(T1_EXTERNAL|T1_CLK_OUT);               // 
+.................... //setup_timer_1(T1_EXTERNAL|T1_EXTERNAL_SYNC);            // 
+.................... //setup_timer_1(T1_EXTERNAL|T1_CLK_OUT|T1_EXTERNAL_SYNC);   // 
+.................... setup_timer_1(T1_DISABLED);                           // 
+....................  
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT TRAN TIMER 1            // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //enable_interrupts(INT_TIMER1);   //Cho phep ngat tran timer1 hoat dong 
+.................... disable_interrupts(INT_TIMER1);   //Khong cho phep ngat tran timer1 hoat dong (mac dinh) 
+....................  
+.................... } 
+.................... void timer2_config() 
+.................... { 
+.................... //############################################################ 
+.................... //              Cau Hinh Timer 2                     // 
+.................... //         Over_Period: 1-255                        // 
+.................... //         Int_Period : 1-16                        // 
+.................... //         T_Ov   :Chu ky tran bo dem timer2            // 
+.................... //         T_In   :Chu ky xay ra ngat tran timer 0      // 
+.................... //         T_osc   : Chu ky dao dong su dung cho chip      // 
+.................... //############################################################ 
+....................  
+.................... //setup_timer_2(T2_DIV_BY_1,Over_Period,Int_Period);      //   T_ov=T_osc*4*1*(1+Over_Period)   ;   T_In=T_osc*4*1*(1+Over_Period)*Int_Period 
+.................... //setup_timer_2(T2_DIV_BY_4,Over_Period,Int_Period);      //   T_ov=T_osc*4*4*(1+Over_Period)   ;   T_In=T_osc*4*4*(1+Over_Period)*Int_Period 
+.................... //setup_timer_2(T2_DIV_BY_16,Over_Period,Int_Period);      //   T_ov=T_osc*4*16*(1+Over_Period)   ;   T_In=T_osc*4*16*(1+Over_Period)*Int_Period 
+.................... //setup_timer_2(T2_DISABLED,0,1);                      //   Khong su dung bo dem timer2 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+.................... //               NGAT TRAN TIMER 2            // 
+.................... //++++++++++++++++++++++++++++++++++++++++++++++++++// 
+....................  
+.................... //enable_interrupts(INT_TIMER2);   //Cho phep ngat tran timer2 hoat dong 
+.................... disable_interrupts(INT_TIMER2);   //Khong cho phep ngat tran timer2 hoat dong (mac dinh) 
+.................... } 
+.................... #endif 
+....................  
+.................... void main() 
+.................... {   
+*
+02DF:  CLRF   04
+02E0:  BCF    03.7
+02E1:  MOVLW  1F
+02E2:  ANDWF  03,F
+02E3:  BCF    27.0
+02E4:  CLRF   2B
+02E5:  CLRF   2A
+02E6:  BSF    03.5
+02E7:  BSF    1F.0
+02E8:  BSF    1F.1
+02E9:  BSF    1F.2
+02EA:  BCF    1F.3
+02EB:  MOVLW  07
+02EC:  MOVWF  1C
+....................    unsigned char str[20]; 
+....................    LCD_Init(); 
+02ED:  BCF    03.5
+02EE:  GOTO   166
+....................    sprintf(str,"   DEMO TIMER"); 
+02EF:  CLRF   2B
+02F0:  MOVLW  2C
+02F1:  MOVWF  2A
+02F2:  MOVLW  FB
+02F3:  BSF    03.6
+02F4:  MOVWF  0D
+02F5:  MOVLW  00
+02F6:  MOVWF  0F
+02F7:  BCF    03.6
+02F8:  CALL   1A4
+....................    delay_ms(10); 
+02F9:  MOVLW  0A
+02FA:  MOVWF  43
+02FB:  CALL   137
+....................    LCD_Puts(str); 
+02FC:  CLRF   41
+02FD:  MOVLW  2C
+02FE:  MOVWF  40
+02FF:  CALL   1EA
+....................    delay_ms(1000); 
+0300:  MOVLW  04
+0301:  MOVWF  40
+0302:  MOVLW  FA
+0303:  MOVWF  43
+0304:  CALL   137
+0305:  DECFSZ 40,F
+0306:  GOTO   302
+....................    LCD_Clear(); 
+0307:  GOTO   209
+....................    sprintf(str,"BanLinhKien.Vn"); 
+0308:  CLRF   2B
+0309:  MOVLW  2C
+030A:  MOVWF  2A
+030B:  MOVLW  02
+030C:  BSF    03.6
+030D:  MOVWF  0D
+030E:  MOVLW  01
+030F:  MOVWF  0F
+0310:  BCF    03.6
+0311:  CALL   1A4
+....................    LCD_Gotoxy(0,0); 
+0312:  CLRF   40
+0313:  CLRF   41
+0314:  CALL   212
+....................    LCD_Puts(str); 
+0315:  CLRF   41
+0316:  MOVLW  2C
+0317:  MOVWF  40
+0318:  CALL   1EA
+....................    interrupt_config(); 
+0319:  GOTO   226
+....................    timer0_config(); 
+031A:  GOTO   238
+....................    while(TRUE) 
+....................    { 
+....................    if(enable_display) 
+031B:  BTFSS  27.0
+031C:  GOTO   337
+....................       { 
+....................       LCD_Gotoxy(0,1); 
+031D:  CLRF   40
+031E:  MOVLW  01
+031F:  MOVWF  41
+0320:  CALL   212
+....................       sprintf(str,"Gia tri:%2u",Value); 
+0321:  CLRF   2B
+0322:  MOVLW  2C
+0323:  MOVWF  2A
+0324:  MOVLW  0A
+0325:  BSF    03.6
+0326:  MOVWF  0D
+0327:  MOVLW  01
+0328:  MOVWF  0F
+0329:  BCF    03.0
+032A:  MOVLW  08
+032B:  BCF    03.6
+032C:  MOVWF  40
+032D:  GOTO   242
+032E:  MOVF   29,W
+032F:  MOVWF  40
+0330:  MOVLW  11
+0331:  MOVWF  41
+0332:  GOTO   2A8
+....................       LCD_Puts(str); 
+0333:  CLRF   41
+0334:  MOVLW  2C
+0335:  MOVWF  40
+0336:  CALL   1EA
+....................       } 
+....................    } 
+0337:  GOTO   31B
+.................... }                 
+0338:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F3A   HS NOWDT NOPUT NOBROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

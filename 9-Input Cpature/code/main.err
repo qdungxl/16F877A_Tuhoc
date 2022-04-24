@@ -1,0 +1,3 @@
+>>> Warning 202 "D:\Company\Project\Dien Dan\PIC\Bai 12. Input Capture\code\var.h" Line 3(6,20): Variable never used:   enable_display
+      Memory usage:   ROM=16%      RAM=14% - 21%
+      0 Errors,  1 Warnings.

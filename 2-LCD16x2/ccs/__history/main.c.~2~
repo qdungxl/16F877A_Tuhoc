@@ -1,0 +1,13 @@
+#include <main.h>
+#incldue <lcd.c>
+#incldue <var.h>
+
+void main()
+{
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

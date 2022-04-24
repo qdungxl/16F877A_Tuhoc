@@ -1,0 +1,21 @@
+#include <main.h>
+#include <var.h>
+#include "lcd.c"
+void ngat_ngoai(void)
+{
+  LCD_Clear();
+}
+
+void main()
+{
+   unsigned char str[20];
+   LCD_Init();
+   sprintf(str,"TEST NGAT NGOAI");
+   LCD_Gotoxy(1,0);
+   LCD_Puts(str);
+   while(TRUE)
+   {
+      
+   }
+
+}

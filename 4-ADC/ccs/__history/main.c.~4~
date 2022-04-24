@@ -1,0 +1,19 @@
+#include <main.h>
+#include "lcd.c"
+#include "adc.c"
+#include <var.h>
+
+void main()
+{
+   unsigned char str[20];
+   unsigned int16 Value;
+   LCD_Init();
+   adc_config();
+   sprintf(str,"  DEMO ADC");
+   LCD_Puts(str);
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

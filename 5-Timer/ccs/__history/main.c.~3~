@@ -1,0 +1,20 @@
+#include <main.h>
+#include <var.h>
+#include "lcd.c"
+#include "interrupt.c"
+#include "timer.c"
+
+void main()
+{
+   unsigned char str[20];
+   LCD_Init();
+   sprintf(str," DEMO TIMER");
+   LCD_Gotoxy(0,0);
+   LCD_Puts(str);
+   
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

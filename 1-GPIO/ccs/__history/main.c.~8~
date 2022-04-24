@@ -1,0 +1,18 @@
+#include <main.h>
+#include <var.h>
+#define LED pin_d0
+#define BUTTON pin_a5
+void main()
+{
+   int1 LedState = 1;
+   output_drive(LED);
+   output_low(LED);
+   while(TRUE)
+   {
+      if(input(BUTTON)==0)
+      {
+         
+      }
+   }
+
+}

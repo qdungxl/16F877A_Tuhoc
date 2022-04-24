@@ -1,0 +1,7 @@
+>>> Warning 216 "main.c" Line 36(1,2): Interrupts disabled during call to prevent re-entrancy:  (LCD_Send4Bit)
+>>> Warning 216 "main.c" Line 36(1,2): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "main.c" Line 36(1,2): Interrupts disabled during call to prevent re-entrancy:  (LCD_SendCommand)
+>>> Warning 216 "main.c" Line 36(1,2): Interrupts disabled during call to prevent re-entrancy:  (LCD_Clear)
+      Memory usage:   ROM=9%      RAM=11% - 15%
+      0 Errors,  4 Warnings.
+Build Successful.

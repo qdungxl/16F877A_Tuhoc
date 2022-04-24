@@ -1,0 +1,14 @@
+#include <main.h>
+#include <uart.c>
+#include <key_4x4.c>
+#include <var.h>
+
+void main()
+{
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

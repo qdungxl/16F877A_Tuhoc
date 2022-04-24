@@ -1,0 +1,5 @@
+#ifndef _VAR_
+#define _VAR_
+unsigned int1 enable_display=0;
+
+#endif                                          

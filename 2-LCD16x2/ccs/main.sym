@@ -1,0 +1,101 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 @sprintf_string
+022-035 MAIN.str
+036     MAIN.i
+037     LCD_Gotoxy.x
+037     @PRINTF_D_642.P1
+037-038 LCD_Puts.s
+037     MAIN.@SCRATCH1
+037     @PSTRINGC7_642.@SCRATCH1
+038     LCD_Gotoxy.y
+038     @PRINTF_D_642.P1
+038     @PSTRINGC7_642.@SCRATCH2
+039     LCD_Gotoxy.address
+039     LCD_Puts.@SCRATCH1
+039     @PSTRINGC7_642.@SCRATCH3
+039     @PRINTF_D_642.@SCRATCH1
+03A     @delay_ms1.P1
+03A     LCD_PutChar.data
+03A     @PSTRINGC7_642.@SCRATCH4
+03A     @PRINTF_D_642.@SCRATCH2
+03B     LCD_SendCommand.command
+03B     @PRINTF_D_642.@SCRATCH3
+03C     LCD_SendCommand.@SCRATCH1
+03C     @PRINTF_D_642.@SCRATCH4
+03D     @SPRINTF.P1
+03D     @DIV88.P2
+03D     LCD_Send4Bit.data
+03E     @DIV88.P1
+03E     LCD_Send4Bit.@SCRATCH1
+03F     @DIV88.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const640.call
+00000A  LCD_Send4Bit
+00003D  @delay_ms1
+000051  LCD_Enable
+000065  LCD_SendCommand
+000072  LCD_Init
+0000A9  LCD_Clear
+0000B0  @SPRINTF
+0000BD  @PSTRINGC7_642
+000115  LCD_Gotoxy
+00012C  LCD_Puts
+000141  LCD_PutChar
+000151  @DIV88
+000166  @PRINTF_D_642
+0001BF  MAIN
+0001BF  @cinit1
+0001CB  @cinit2
+
+Project Directory:
+    D:\STUDY\PIC\2-LCD16x2\ccs\
+
+Project Files:
+    main.c                                                  [23-Apr-22 17:32  CRC=6B1E92A7]
+    main.h                                                  [23-Apr-22 17:23  CRC=B7D0B29C]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [12-Nov-13 14:35  CRC=81334808]
+    lcd.c                                                   [23-Apr-22 17:21  CRC=421172E4]
+    var.h                                                   [21-Apr-22 17:43  CRC=2539036B]
+
+Source signature=30A60705
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

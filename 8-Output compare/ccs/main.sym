@@ -1,0 +1,139 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B     @TRIS_C
+02C.0   set
+02D-02E Value
+02F-030 @sprintf_string
+031-044 main.str
+045     LCD_Gotoxy.x
+045-046 LCD_Puts.s
+045     main.@SCRATCH1
+045     @PSTRINGC7_649.@SCRATCH1
+046     LCD_Gotoxy.y
+046     @PSTRINGC7_649.@SCRATCH2
+047     LCD_Gotoxy.address
+047     LCD_Puts.@SCRATCH1
+047     @PSTRINGC7_649.@SCRATCH3
+048     @delay_ms1.P1
+048     @SPRINTF.P2
+048     LCD_PutChar.Data
+048     @PSTRINGC7_649.@SCRATCH4
+049     LCD_SendCommand.command
+04A     LCD_SendCommand.@SCRATCH1
+04B     LCD_Send4Bit.Data
+04C     LCD_Send4Bit.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000051  ngat_CCP1
+00006D  @const647.call
+000075  @const652.call
+00007D  LCD_Send4Bit
+0000A4  @delay_ms1
+0000B9  LCD_Enable
+0000C6  LCD_SendCommand
+0000D3  LCD_Init
+000104  @SPRINTF
+000111  @PSTRINGC7_649
+000167  LCD_Puts
+00017C  LCD_PutChar
+000186  LCD_Clear
+00018F  LCD_Gotoxy
+0001A5  main
+0001A5  @cinit1
+0001B4  @cinit2
+
+Project Directory:
+    D:\STUDY\PIC\8-Output compare\ccs\
+
+Project Files:
+    main.c                                                  [24-Apr-22 10:23  CRC=8EF49E21]
+    main.h                                                  [21-Apr-22 17:43  CRC=CFF73294]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [12-Nov-13 14:35  CRC=81334808]
+    var.h                                                   [21-Apr-22 17:43  CRC=00000000]
+    lcd.c                                                   [21-Apr-22 17:43  CRC=A5072549]
+    timer.c                                                 [21-Apr-22 17:43  CRC=FAEAEEB4]
+
+Source signature=7AFC1B6E
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Case Sensitive: Yes
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

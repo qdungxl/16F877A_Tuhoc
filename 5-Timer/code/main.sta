@@ -1,0 +1,85 @@
+
+ROM used: 825 (10%)
+          825 (10%) including unused fragments
+
+          1 Average locations per line
+          8 Average locations per statement
+
+RAM used: 38 (10%) at main() level
+          45 (12%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   30    18  18  main.c
+  144     0   0  main.h
+  330     0   0  C:\Program Files\PICC\devices\16F877A.h
+    7     0   0  var.h
+  108    50  51  lcd.c
+  201    25  26  interrupt.c
+   88     5   5  timer.c
+----- -----
+  908    98 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   3   1             @delay_ms1
+0     13   2   0    72  1.2  LCD_Enable
+0     39   5   2   226  2.8  LCD_Send4Bit
+0     13   2   2    84  1.7  LCD_SendCommand
+0     49   6   0   508  1.4  LCD_Init
+0     20   2   3   214  5.0  LCD_Gotoxy
+0      9   1   0    32  1.0  LCD_Clear
+ Inline        1    65  1.2  LCD_PutChar
+0     31   4   3    69  2.3  LCD_Puts
+0     18   2   0   243  1.4  interrupt_config
+0      4   0   0     8  1.5  ngat_ngoai
+0      4   0   0     8  1.5  ngat_RB
+0     26   3   0   219  3.6  ngat_timer0
+0      4   0   0     5  1.0  ngat_timer1
+0      4   0   0     5  1.0  ngat_timer2
+0      4   0   0     5  1.0  ngat_ADC
+0      4   0   0     5  1.0  ngat_ccp1
+0      4   0   0     5  1.0  ngat_ccp2
+0      4   0   0     5  1.0  TBE_isr
+0      4   0   0     5  1.0  RDA_isr
+0      4   0   0     5  1.0  SSP_isr
+0      4   0   0     5  1.0  PSP_isr
+0      4   0   0     5  1.0  BUSCOL_isr
+0      4   0   0     5  1.0  EEPROM_isr
+0      4   0   0     6  0.5  COMP_isr
+0     10   1   0    50  1.5  timer0_config
+0     90  11  21   442  3.2  MAIN
+0      7   1   0             @const106
+0     13   2   1             @SPRINTF
+0     70   8   3             @PSTRINGC7_108
+0      8   1   0             @const111
+0      6   1   0             @const112
+0     81  10   4             @PSTRINGCN7_108
+0     21   3   3             @DIV88
+0     55   7   2             @PRINTF_U_108
+
+Program metrics:
+    Functions               26
+    Statements              98
+    Comments                354
+    Volume (V)              4205
+    Difficilty (D)          39.1
+    Effort to implement (E) 164363
+    Time to implement (T)   2 hours, 32 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   4
+    Maintainability (MI)    96
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-000A8   165  0  
+000A9-007FF   656  1223  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

@@ -1,0 +1,89 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-02F KEY_4X4
+030     MAIN.key
+031     @PSTRINGCN7_9600_62_63.P1
+031     get_key_4x4.i
+031     @PSTRINGC7_9600_62_63.@SCRATCH1
+032     @delay_ms1.P1
+032     check_row.i
+032     ButtonIsPush.@SCRATCH1
+032     get_key_4x4.@SCRATCH1
+032     @PSTRINGC7_9600_62_63.@SCRATCH2
+032     @PSTRINGCN7_9600_62_63.@SCRATCH1
+033     ButtonIsPush.@SCRATCH2
+033     @PSTRINGC7_9600_62_63.@SCRATCH3
+033     @PSTRINGCN7_9600_62_63.@SCRATCH2
+034     ButtonIsPush.@SCRATCH3
+034     @PSTRINGC7_9600_62_63.@SCRATCH4
+034     @PSTRINGCN7_9600_62_63.@SCRATCH3
+035     ButtonIsPush.@SCRATCH4
+035     @PSTRINGCN7_9600_62_63.@SCRATCH4
+036     ButtonIsPush.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const636.call
+000009  @const638.call
+000012  key_4x4_init
+00001F  UART_config
+000022  @PSTRINGC7_9600_62_63
+00007C  ButtonIsPush
+000099  @delay_ms1
+0000AE  get_key_4x4
+0000C0  check_row
+00011C  @PSTRINGCN7_9600_62_63
+000177  MAIN
+000177  @cinit1
+000189  @cinit2
+
+Project Directory:
+    D:\STUDY\PIC\3-Quet phim\ccs\
+
+Project Files:
+    main.c                                                  [23-Apr-22 21:21  CRC=F7A065D2]
+    main.h                                                  [23-Apr-22 21:22  CRC=DC29800F]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [12-Nov-13 14:35  CRC=81334808]
+    uart.c                                                  [21-Apr-22 17:43  CRC=12CF42A0]
+    key_4x4.c                                               [21-Apr-22 17:43  CRC=81C01017]
+    var.h                                                   [21-Apr-22 17:43  CRC=2539036B]
+
+Source signature=33FE8776
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

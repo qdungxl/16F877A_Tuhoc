@@ -1,0 +1,21 @@
+#include <16F877A.h>
+#device *=16 adc=8 
+
+#FUSES NOWDT                    //No Watch Dog Timer
+#FUSES NOBROWNOUT               //No brownout reset
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+
+#use delay(crystal=20000000)
+//_____________________I/O HC595___________________________
+#define HC595_LATCH_BIT    PIN_C3
+#define HC595_LATCH_FRAME  PIN_C4 
+#define HC595_DATA         PIN_C5 
+//__________________I/O KEY PAD 4x4________________________
+   #define ROW1   PIN_D0
+   #define ROW2   PIN_D1
+   #define ROW3   PIN_D2
+   #define ROW4   PIN_D3
+   #define COL1   PIN_D4
+   #define COL2   PIN_D5
+   #define COL3   PIN_D6
+   #define COL4   PIN_D7

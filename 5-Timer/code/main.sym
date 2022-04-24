@@ -1,0 +1,164 @@
+004     @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027.0   enable_display
+028     Count
+029     Value
+02A-02B @sprintf_string
+02C-03F MAIN.str
+040-041 LCD_Puts.s
+040     @PRINTF_U_108.P1
+040     LCD_Gotoxy.x
+040     @PSTRINGCN7_108.P1
+040     MAIN.@SCRATCH1
+040     @PSTRINGC7_108.@SCRATCH1
+041     LCD_Gotoxy.y
+041     @PRINTF_U_108.P1
+041     @PSTRINGC7_108.@SCRATCH2
+041     @PSTRINGCN7_108.@SCRATCH1
+042     @DIV88.P1
+042     LCD_Gotoxy.address
+042     LCD_Puts.@SCRATCH1
+042     @PSTRINGC7_108.@SCRATCH3
+042     @PSTRINGCN7_108.@SCRATCH2
+043     @delay_ms1.P1
+043     @DIV88.P2
+043     LCD_PutChar.Data
+043     @PSTRINGCN7_108.@SCRATCH3
+044     @SPRINTF.P1
+044     LCD_SendCommand.command
+044     @DIV88.@SCRATCH1
+045     LCD_SendCommand.@SCRATCH1
+046     LCD_Send4Bit.Data
+047     LCD_Send4Bit.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+0137  @delay_ms1
+014C  LCD_Enable
+0110  LCD_Send4Bit
+0159  LCD_SendCommand
+0166  LCD_Init
+0212  LCD_Gotoxy
+0209  LCD_Clear
+01FF  LCD_PutChar
+01EA  LCD_Puts
+0226  interrupt_config
+00A9  ngat_ngoai
+00AD  ngat_RB
+00B1  ngat_timer0
+00CB  ngat_timer1
+00CF  ngat_timer2
+00D3  ngat_ADC
+00D7  ngat_ccp1
+00DB  ngat_ccp2
+00DF  TBE_isr
+00E3  RDA_isr
+00E7  SSP_isr
+00EB  PSP_isr
+00EF  BUSCOL_isr
+00F3  EEPROM_isr
+00F7  COMP_isr
+0238  timer0_config
+02DF  MAIN
+00FB  @const106
+0197  @SPRINTF
+01A4  @PSTRINGC7_108
+0102  @const111
+010A  @const112
+0242  @PSTRINGCN7_108
+0293  @DIV88
+02A8  @PRINTF_U_108
+02DF  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    D:\Company\Project\Dien Dan\PIC\Bai 10. Timer Counter\code\
+
+Project Files:
+    main.c
+    main.h
+    C:\Program Files\PICC\devices\16F877A.h
+    var.h
+    lcd.c
+    interrupt.c
+    timer.c
+
+Units:
+    D:\Company\Project\Dien Dan\PIC\Bai 10. Timer Counter\code\main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta

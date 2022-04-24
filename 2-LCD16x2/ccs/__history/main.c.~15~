@@ -1,0 +1,20 @@
+#include <main.h>
+#include "lcd.c"
+#include <var.h>
+
+void main()
+{
+   int8 str[20];
+   int8 x;
+   LCD_Init();
+   LCD_Clear();
+   sprintf(str,"Hello");
+   LCD_Gotoxy(5,0);
+   LCD_Puts(str);
+  
+   while(TRUE)
+   {
+     
+   }
+
+}
